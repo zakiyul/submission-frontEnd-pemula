@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato:wght@300&family=Raleway&family=Shizuru&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Lato', sans-serif;
+}
+header{
+	background-color: darkmagenta;
+	color: white;
+	padding: 12px 124px;
+	font-family: 'Shizuru', cursive;
+}
+main{
+	display: flex;
+	padding: 12px 124px;
+}
+main section:first-child{
+	padding: 24px;
+	margin: 24px;
+}
+button{
+	font-family: 'Lato', sans-serif;
+}
+input[type='submit']{
+	font-family: 'Lato', sans-serif;
+}
+.col-2 section{
+	margin: 24px;
+}
+
+.col-1, .col-2{
+	margin: 2px;
+	width: 100%;
+}
+#input-book{
+	border: 1px solid lightblue;
+	border-radius: 8px;
+}
+
+/* @awal input book */
+#input-book h3{
+	margin-bottom: 12px;
+}
+.form-group{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 12px;
+}
+.form-group label{
+	color: #212529;
+	font-weight: bold;
+}
+.form-group input{
+	border: 1px solid #e4e4e7;
+	border-radius: 6px;
+	height: 20px;
+	padding: 7px;
+	margin: 0px;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+}
+.form-group input:focus{
+	outline-color: #dadada;
+}
+#submit-book{
+	background-color: gold;
+	padding: 8px;
+	border: 1px solid #dadada;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: all .2s ease-out;
+}
+#submit-book:hover{
+	background-color: goldenrod;
+	border: 1px solid #dadada;
+	transition: all .2s ease-in;
+}
+/* @akhir input book  */
+/* @awal search  */
+#search h3{
+	margin-bottom: 12px;
+}
+#search label{
+	color: #212529;
+	font-weight: bold;
+}
+#search .input-group{
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #dadada;
+	height: 20px;
+	padding: 7px;
+	margin: 0;
+	border-radius: 6px;
+}
+.bi{
+	margin-right: 12px;
+	cursor: pointer;
+	transition: all .2s ease-out;
+}
+.bi:hover{
+	color: #e4e4e7;
+	transition: all .2s ease-in;
+}
+#search input{
+	width: 100%;
+	border: none;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+}
+#search input:focus{
+	outline: none;
+}
+/* @akhir search  */
+.book-list{
+	border: 1px solid lightblue;
+}
+.book-list h3:first-child{
+	background-color: darkmagenta;
+	color: white;
+	padding: 10px 12px;
+	margin-bottom: 10px;
+}
+.book{
+	margin: 12px;
+	padding: 12px;
+	border: 1px solid #dadada;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.book ul{
+	list-style: none;
+}
+.book button{
+	border: none;
+	padding: 8px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.book button:first-child{
+	background-color: gold;
+	transition: all .2s ease-out;
+}
+.book button:first-child:hover{
+	background-color: goldenrod;
+	transition: all .2s ease-in;
+}
+.book button:last-child{
+	background-color: crimson;
+	color: white;
+	transition: all .2s ease-out;
+}
+.book button:last-child:hover{
+	background-color: maroon;
+	color: white;
+	transition: all .2s ease-in;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:513px) {
+	header{
+		background-color: darkmagenta;
+		color: white;
+		padding: 12px 24px;
+	}
+	main{
+		padding: 12px 24px;
+		display: block;
+	}
+	main section{
+		/* border: 1px solid lightblue; */
+		padding: 5px;
+		margin: 10px 2px;
+		/* width: 100%; */
+	}
+}
