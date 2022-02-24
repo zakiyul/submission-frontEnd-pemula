@@ -21,6 +21,10 @@ main section:first-child{
 	padding: 24px;
 	margin: 24px;
 }
+main section#edit-book{
+	padding: 24px;
+	margin: 24px;
+}
 button{
 	font-family: 'Lato', sans-serif;
 }
@@ -44,6 +48,15 @@ input[type='submit']{
 #input-book h3{
 	margin-bottom: 12px;
 }
+#edit-book{
+	border: 1px solid lightblue;
+	border-radius: 8px;
+}
+
+#edit-book h3{
+	margin-bottom: 12px;
+}
+
 .form-group{
 	display: flex;
 	flex-direction: column;
@@ -74,6 +87,19 @@ input[type='submit']{
 	transition: all .2s ease-out;
 }
 #submit-book:hover{
+	background-color: goldenrod;
+	border: 1px solid #dadada;
+	transition: all .2s ease-in;
+}
+#edit-book-btn{
+	background-color: gold;
+	padding: 8px;
+	border: 1px solid #dadada;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: all .2s ease-out;
+}
+#edit-book-btn:hover{
 	background-color: goldenrod;
 	border: 1px solid #dadada;
 	transition: all .2s ease-in;
@@ -150,6 +176,16 @@ input[type='submit']{
 	background-color: goldenrod;
 	transition: all .2s ease-in;
 }
+.book button:nth-child(2){
+	background-color: darkmagenta;
+	transition: all .2s ease-out;
+	color: white;
+	margin-left: 5px;
+}
+.book button:nth-child(2):hover{
+	background-color: magenta;
+	transition: all .2s ease-in;
+}
 .book button:last-child{
 	background-color: crimson;
 	color: white;
@@ -159,6 +195,9 @@ input[type='submit']{
 	background-color: maroon;
 	color: white;
 	transition: all .2s ease-in;
+}
+.hapus-buku{
+	margin-left: 5px;
 }
 
 

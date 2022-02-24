@@ -16,7 +16,7 @@
         <div class="col-1">
             <section id="input-book">
                 <h3>Masukan Buku Baru</h3>
-                <form class="form-input">
+                <form class="form-input" id="form-input-book">
                     <div class="form-group">
                         <label for="judul">Judul</label>
                         <input type="text" name="judul" id="judul">
@@ -36,6 +36,29 @@
                     <input type="submit" value="Masukan Buku" id="submit-book">
                 </form>
             </section>
+            <section id="edit-book">
+                <h3>Edit Buku</h3>
+                <form class="form-input" id="form-edit-book">
+                    <input type="hidden" id="id-buku">
+                    <div class="form-group">
+                        <label for="judul-edit">Judul</label>
+                        <input type="text" name="judul-edit" id="judul-edit">
+                    </div>
+                    <div class="form-group">
+                        <label for="penulis-edit">Penulis</label>
+                        <input type="text" name="penulis-edit" id="penulis-edit">
+                    </div>
+                    <div class="form-group">
+                        <label for="tahun-edit">Tahun</label>
+                        <input type="number" name="tahun-edit" id="tahun-edit" maxlength="4">
+                    </div>
+                    <div class="form-group">
+                        <label for="selesai-edit">Selesai Dibaca</label>
+                        <input type="checkbox" name="selesai-edit" id="selesai-edit">
+                    </div>
+                    <input type="submit" value="Edit Buku" id="edit-book-btn">
+                </form>
+            </section>
         </div>
         <div class="col-2">
             <section id="search">
@@ -46,10 +69,10 @@
                     </div>
                 </div>
             </section>
-            <section class="book-list" id="belum-selesai">
+            <section class="book-list">
                 <h3>Masih Dibaca</h3>
-                <div class="books">
-                    <div class="book">
+                <div class="books" id="belum-selesai">
+                    <!-- <div class="book">
                         <article>
                             <h4>Naruto</h4>
                             <ul>
@@ -65,47 +88,13 @@
                             <button id="selesai-dibaca">Selesai Baca</button>
                             <button id="hapus-buku">Hapus Buku</button>
                         </aside>
-                    </div>
-                    <div class="book">
-                        <article>
-                            <h4>Naruto</h4>
-                            <ul>
-                                <li>
-                                    <small><strong>Penulis</strong>: Masashi Kisimoto</small>
-                                </li>
-                                <li>
-                                    <small><strong>Tahun</strong>: 2001</small>
-                                </li>
-                            </ul>
-                        </article>
-                        <aside>
-                            <button id="selesai-dibaca">Selesai Baca</button>
-                            <button id="hapus-buku">Hapus Buku</button>
-                        </aside>
-                    </div>
-                    <div class="book">
-                        <article>
-                            <h4>Naruto</h4>
-                            <ul>
-                                <li>
-                                    <small><strong>Penulis</strong>: Masashi Kisimoto</small>
-                                </li>
-                                <li>
-                                    <small><strong>Tahun</strong>: 2001</small>
-                                </li>
-                            </ul>
-                        </article>
-                        <aside>
-                            <button id="selesai-dibaca">Selesai Baca</button>
-                            <button id="hapus-buku">Hapus Buku</button>
-                        </aside>
-                    </div>
+                    </div>-->
                 </div>
             </section>
-            <section class="book-list" id="sudah-selesai">
+            <section class="book-list">
                 <h3>Selesai Dibaca</h3>
-                <div class="books">
-                    <div class="book">
+                <div class="books" id="sudah-selesai">
+                    <!-- <div class="book">
                         <article>
                             <h4>Naruto</h4>
                             <ul>
@@ -122,26 +111,12 @@
                             <button id="hapus-buku">Hapus Buku</button>
                         </aside>
                     </div>
-                    <div class="book">
-                        <article>
-                            <h4>Naruto</h4>
-                            <ul>
-                                <li>
-                                    <small><strong>Penulis</strong>: Masashi Kisimoto</small>
-                                </li>
-                                <li>
-                                    <small><strong>Tahun</strong>: 2001</small>
-                                </li>
-                            </ul>
-                        </article>
-                        <aside>
-                            <button id="selesai-dibaca">Belum Selesai Baca</button>
-                            <button id="hapus-buku">Hapus Buku</button>
-                        </aside>
-                    </div>
+                    -->
                 </div>
             </section>
         </div>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
